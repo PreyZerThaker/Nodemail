@@ -8,6 +8,9 @@ app.use(express.static("public"));
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 
+app.get("/error", function(req, res) {
+  res.send("<h1>That's an error.</h1>");
+});
 
 app.get("/", function(req, res){
   res.render("email");
@@ -32,6 +35,7 @@ app.post("/", function(req, res) {
       transporter.sendMail(mailOptions, function(error, info){
         if (error) {
           console.log(error);
+          res.redirect("/error");
         } else {
           console.log('Email sent: ' + info.response);
         }
