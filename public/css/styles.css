@@ -1,36 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+h1, h3 {
+    font-family: Poppins !important;
+}
 body {
     padding: 0;
     text-align: center;
     background-image: url("https://raw.githubusercontent.com/codingmarket07/Newsletter/master/bg.jpg");
     color: whitesmoke;
+    font-family: Montserrat;
 }
 
 textarea {
     text-align: center;
     display: block;
     transform: translateX(450px) translateY(10px);
+    font-family: Montserrat;
 }
 
 button {
     transform: translateY(30px);
-    
+    font-family: Montserrat;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
-h1, h3 {
-    font-family: Poppins !important;
-}
-            body {
-              font-family: Montserrat;
-            }
-            input {
-                font-family: Montserrat;
-            }
-            button {
-                font-family: Montserrat;
-            }
-
-            
-            textarea {
-                font-family: Montserrat;
-            }
